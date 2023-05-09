@@ -1,14 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Users</h1>
-
 <table>
 <thead>
-<tr>
+  <tr>
       <th>Name</th>
       <th>Email</th>
       <th colspan="3"></th>
-    </tr>
+  </tr>
 </thead>
 <% @users.each do |user| %>
   <tr>
@@ -20,3 +19,6 @@
   </tr>
 <% end %>
 </table>
+<div>
+  <%= link_to "New user", new_user_path %>
+</div>
